@@ -1,0 +1,7 @@
+{
+  "url":"http://localhost",
+  "port":8000,
+  "db":"mainServer",
+  "transactionsForBlock":3,
+  "AESKey":"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+}

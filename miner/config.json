@@ -1,0 +1,11 @@
+{
+  "mainServer":"http://localhost:8000",
+  "AESKey":"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+  "blockchain_file":"./blockchain.txt",
+  "blocks_per_send":300,
+  "timegap_for_send_blocks":500,
+  "num_per_sendUserTransaction":10,
+  "getMADLedger_time":60000,
+  "MADLedger_per_receive": 2000,
+  "transactionsForBlock":1
+}

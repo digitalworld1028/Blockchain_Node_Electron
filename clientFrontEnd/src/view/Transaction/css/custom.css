@@ -1,0 +1,312 @@
+
+h1{
+   font-size: 30px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 300;
+   text-align: center;
+   margin-bottom: 15px;
+ }
+ table{
+   width:100%;
+   table-layout: fixed;
+ }
+ .tbl-header{
+   margin-top: 1vh;
+   background-color: #664d039c;
+  }
+ .tbl-content{
+   background-color: #ffffffd4;
+   height: calc(88vh - 100px);
+   overflow-x:auto;
+   margin-top: 0px;
+   border: 1px solid rgba(255,255,255,0.3);
+ }
+ th{
+   padding: 10px 3px;
+   overflow: auto;
+   text-align: center !important;
+   font-weight: 500;
+   font-size: 12px;
+   color: #fff;
+   text-transform: uppercase;
+ }
+ td{
+   padding: 15px 3px;
+   overflow: auto;
+   text-align: center;
+   vertical-align:middle;
+   font-weight: 300;
+   font-size: 12px;
+   color: #41464b;
+   border-bottom: solid 1px rgba(255,255,255,0.1);
+ }
+ 
+ 
+ /* demo styles */
+ 
+ @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+ body{
+    height: 100vh;
+   background-image: url('../img/background.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Roboto', sans-serif;
+   padding: 6vh 5vw 5vh;
+ }
+ section{
+   margin: 50px;
+ }
+ 
+ 
+ /* follow me template */
+ .made-with-love {
+   margin-top: 40px;
+   padding: 10px;
+   clear: left;
+   text-align: center;
+   font-size: 10px;
+   font-family: arial;
+   color: #fff;
+ }
+ .made-with-love i {
+   font-style: normal;
+   color: #F50057;
+   font-size: 14px;
+   position: relative;
+   top: 2px;
+ }
+ .made-with-love a {
+   color: #fff;
+   text-decoration: none;
+ }
+ .made-with-love a:hover {
+   text-decoration: underline;
+ }
+
+ #loading-state, #no-data {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 1em;
+ }
+ 
+ 
+ /* for custom scrollbar for webkit browser*/
+ 
+ ::-webkit-scrollbar {
+     width: 6px;
+ } 
+ ::-webkit-scrollbar-track {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+ } 
+ ::-webkit-scrollbar-thumb {
+     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+ }
+
+
+ 
+div, form, input, select, textarea, label, p { 
+   padding: 0;
+   margin: 0;
+   outline: none;
+   font-family: Roboto, Arial, sans-serif;
+   font-size: 14px;
+   color: #666;
+   line-height: 22px;
+   }
+   h1 {
+   position: absolute;
+   margin: 0;
+   font-size: 34px;
+   color: #fff;
+   z-index: 2;
+   line-height: 83px;
+   }
+   textarea {
+   width: calc(100% - 12px);
+   padding: 5px;
+   }
+   .testbox {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 18%;
+      width: 64%;
+      padding: 20px;
+   }
+   select {
+      width:100%;
+      padding:7px;
+   }
+   input {
+      width:100% !important;
+   }
+   form {
+   width: 100%;
+   padding: 20px;
+   border-radius: 6px;
+   background: #bdbdbd;
+   box-shadow: 0 0 16px #41464b;
+   }
+   .banner {
+   position: relative;
+   height: 150px;
+   background-image: url('../img/background4.jpeg');  
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 20px;
+   }
+   .banner h1 {
+      color: #eeeeee;
+   }
+   .banner::after {
+   content: "";
+   background-color: rgba(0, 0, 0, 0.2); 
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   }
+   #new-button {
+      background-color: #b55c35e6;
+      border-radius: 7px;
+      padding: 7px;
+      font-size: 15px;
+      color: #f3f3f3;
+      width: 104px;
+   }
+   input, select, textarea {
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   }
+   input {
+   width: calc(100% - 10px);
+   padding: 5px;
+   }
+   input[type="date"] {
+   padding: 4px 5px;
+   }
+   textarea {
+   width: calc(100% - 12px);
+   padding: 5px;
+   }
+   .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+   color:  #669999;
+   }
+   .item input:hover, .item select:hover, .item textarea:hover {
+   border: 1px solid transparent;
+   box-shadow: 0 0 3px 0  #669999;
+   color: #669999;
+   }
+   .item {
+      position: relative;
+      margin: 10px 0;
+      color: #212529;
+   }
+   .item span {
+      color: red;
+   }
+   input[type="date"]::-webkit-inner-spin-button {
+   display: none;
+   }
+   .item i, input[type="date"]::-webkit-calendar-picker-indicator {
+   position: absolute;
+   font-size: 20px;
+   color:  #a3c2c2;
+   }
+   .item i {
+   right: 1%;
+   top: 30px;
+   z-index: 1;
+   }
+   [type="date"]::-webkit-calendar-picker-indicator {
+   right: 1%;
+   z-index: 2;
+   opacity: 0;
+   cursor: pointer;
+   }
+   input[type=radio], input[type=checkbox]  {
+   display: none;
+   }
+   label.radio {
+   position: relative;
+   display: inline-block;
+   margin: 5px 20px 15px 0;
+   cursor: pointer;
+   }
+   .question span {
+   margin-left: 30px;
+   }
+   .question-answer label {
+   display: block;
+   }
+   label.radio:before {
+   content: "";
+   position: absolute;
+   left: 0;
+   width: 17px;
+   height: 17px;
+   border-radius: 50%;
+   border: 2px solid #ccc;
+   }
+   input[type=radio]:checked + label:before, label.radio:hover:before {
+   border: 2px solid  #669999;
+   }
+   label.radio:after {
+   content: "";
+   position: absolute;
+   top: 6px;
+   left: 5px;
+   width: 8px;
+   height: 4px;
+   border: 3px solid  #669999;
+   border-top: none;
+   border-right: none;
+   transform: rotate(-45deg);
+   opacity: 0;
+   }
+   input[type=radio]:checked + label:after {
+   opacity: 1;
+   }
+   .flax {
+   display:flex;
+   justify-content:space-around;
+   }
+   .btn-block {
+   padding-top: 30px;
+   text-align: center;
+   }
+   button {
+   width: 150px;
+   padding: 10px;
+   border: none;
+   border-radius: 5px; 
+   background:  #669999;
+   font-size: 16px;
+   color: #fff;
+   cursor: pointer;
+   }
+   button:hover {
+   background:  #a3c2c2;
+   }
+   @media (min-width: 568px) {
+   .name-item, .city-item {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   }
+   .name-item input, .name-item div {
+   width: calc(50% - 20px);
+   }
+   .name-item div input {
+   width:97%;}
+   .name-item div label {
+   display:block;
+   padding-bottom:5px;
+   }
+   }

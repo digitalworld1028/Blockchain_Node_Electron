@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+   <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+   <div class="new-trade-div">
+      <button id="new-button">
+         Add New
+      </button>
+   </div>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th style="width: 4%">No</th>
+          <th style="width: 8%">type</th>
+          <th style="width: 11%">Timestamp</th>
+          <th style="width: 6%">Action</th>
+          <th style="width: 9%">EP</th>
+          <th style="width: 9%">TP</th>
+          <th style="width: 9%">SL</th>
+          <th style="width: 10%">Timeframe</th>
+          <th style="width: 10%">Tid</th>
+          <th style="width: 8%">State</th>
+          <th style="width: 16%">Block Number</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td colspan="20">
+            <span id="loading-state">loading...<span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <div class="testbox">
+      <form id="addData">
+      <div class="row">
+        <div class="banner">
+          <h1>Add New Trading Data</h1>
+        </div>
+        <div class="item col-md-6">
+          <label for="action">Action<span>*</span></label>
+          <select id="action" name="action">
+            <option value="buy" selected>Buy</option>
+            <option value="sell">Sell</option>
+          </select>
+        </div>
+        <div class="item col-md-6">
+          <label for="type">Type<span>*</span></label>
+          <select id="type" name="type">
+          </select>
+        </div>
+        <div class="item col-md-6">
+          <label for="ep">Entry Price<span>*</span></label>
+          <input id="ep" type="text" name="Entry_price" value="31253" required/>
+        </div>
+        <div class="item col-md-6">
+          <label for="timestamp">Timestamp<span>*</span></label>
+          <input id="timestamp" type="text" name="timestamp" value="1614589798" required/>
+        </div>
+        <div class="item col-md-6">
+          <label for="tp">TP<span>*</span></label>
+          <input id="tp" type="text" name="tp" value="31300" required/>
+        </div>
+        <div class="item col-md-6">
+          <label for="sl">SL<span>*</span></label>
+          <input id="sl" type="text" name="sl" value="31230" required/>
+        </div>
+        <div class="item col-md-6">
+          <label for="timeframe">Timeframe<span>*</span></label>
+          <input id="timeframe" type="text" name="timeframe" value="30" required/>
+        </div>
+        <div class="item col-md-6">
+          <label for="tid">Tid<span>*</span></label>
+          <input id="tid" type="text" name="tid" value="123456" required/>
+        </div>
+        <div class="btn-block col-md-6">
+          <button type="button" id="submit-button">Submit</button>
+        </div>
+        <div class="btn-block col-md-6">
+          <button type="button" id="cancel-button">Cancel</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <script>
+    var $ = jQuery = require("jquery");
+  </script>
+	<script src='../js/bootstrap.min.js'></script>
+   <script src='js/index.js'></script>
+</body>
+</html>

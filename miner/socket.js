@@ -1,0 +1,20 @@
+
+
+module.exports = function(io, Miner) {
+    io.use(function(socket, next){
+      next();
+    })
+    .on('connection', (socket) => {
+      var query = socket.handshake.query;
+      const link_type = query.link_type;
+      if(link_type == "client") {
+        console.log('user '+query.publicKey+' connected');
+        Miner.addUser(socket);
+      }
+      else if(link_type == "miner") {
+        console.log(socket.handshake.query.port+' is connected');
+        console.log('publicKey:'+socket.handshake.query.publickey);
+        Miner.addMiner(socket);
+      }
+    });
+  }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>LogIn Form</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="login-button">
+    <img src="img/login.png"></img>
+  </div>
+<div id="container">
+  <h1>Log In</h1>
+  <span class="close-btn">
+    <img src="img/close.png"></img>
+  </span>
+
+  <form id="login_form">
+    <p class="error_text none">invalid id/password</p>
+    <input type="email" name="email" id="login_id" placeholder="User Id">
+    <input type="password" name="pass" id="login_pass" placeholder="Password">
+    <a href="#" class="login-btn", id="login">Log in</a>
+    <a id="login_with_privkey">Log in with private key</a>
+    <div id="remember-container">
+      <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+      <span id="remember">Remember me</span>
+      <span id="forgotten">Forgotten password</span>
+    </div>
+    <a href="#" class="register-btn" id="container-register-btn">Register</a>
+  </form>
+</div>
+
+<div id="alter-container">
+  <h1>Log In</h1>
+  <span class="close-btn">
+    <img src="img/close.png"></img>
+  </span>
+
+  <form>
+    <input type="text" name="privkey" id="login_privkey" placeholder="Private Key">
+    <a href="#" class="login-btn", id="alter-login">Log in</a>
+    <a id="login_with_userid">Log in with userid</a>
+    <div id="remember-container">
+      <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+      <span id="remember">Remember me</span>
+      <span id="forgotten">Forgotten password</span>
+    </div>
+    <a href="#" class="register-btn" id="alter-container-register-btn">Register</a>
+  </form>
+</div>
+
+<div id="select-container">
+  <h1>Select</h1>
+  <span class="random-close-btn" id="random_close_btn">
+    <img src="img/close.png"></img>
+  </span>
+
+  <form>
+    <a href="#" class="login-btn" id="import">Import</a>
+    <a href="#" class="register-btn" id="create">Create</a>
+  </form>
+</div>
+
+<div id="register-container">
+  <h1>Register</h1>
+  <span class="close-btn">
+    <img src="img/close.png"></img>
+  </span>
+
+  <form id="register_form">
+    <p class="error_text none">id required</p>
+    <input type="email" name="email" id="register_id" placeholder="User Id">
+    <input type="text" name="first_name" id="first_name" placeholder="Firstname" >
+    <input type="text" name="last_name" id="last_name" placeholder="Lastname" >
+    <input type="password" name="pass" id="register_pass" placeholder="Password">
+    <input type="password" name="confirm-pass" id="register_confirm" placeholder="Confirm password">
+    <a href="#" class="login-btn" id="register">Register</a>
+
+    <a href="#" class="register-btn" id="back">Back</a>
+  </form>
+</div>
+
+<div id="random-container">
+  <h1>Random Text</h1>
+  <span class="random-close-btn" id="random_close_btn">
+    <img src="img/close.png"></img>
+  </span>
+
+  <form id="randomtext_form">
+    <p class="error_text none">Make sure it's at least 20 characters</p>
+    <input type="password" name="random_text" id="random_text" placeholder="Random Text">
+    <a href="#" class="login-btn" id="random">Confirm</a>
+    <a href="#" class="register-btn" id="random_back">Back</a>
+  </form>
+</div>
+
+<!-- Forgotten Password Container -->
+<div id="forgotten-container">
+   <h1>Forgotten</h1>
+  <span class="close-btn">
+    <img src="img/close.png"></img>
+  </span>
+
+  <form>
+    <input type="email" name="email" placeholder="User Id">
+    <a href="#" class="orange-btn">Get new password</a>
+  </form>
+</div>
+  <script src='js/TweenMax.min.js'></script>
+  <script>
+    var $ = jQuery = require("jquery");
+  </script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>
